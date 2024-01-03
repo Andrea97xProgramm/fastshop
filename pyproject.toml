@@ -19,6 +19,11 @@ alembic = "^1.12.1"
 greenlet = "^3.0.1"
 psycopg2-binary = "^2.9.9"
 sqladmin = "^0.16.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+fastapi-users = {extras = ["oauth", "sqlalchemy"], version = "^12.1.2"}
+motor = "^3.3.2"
+beanie = "^1.23.6"
 
 
 [build-system]
@@ -41,6 +46,7 @@ extend-exclude = [
 ]
 line-length = 120
 ignore = [
+    "A003",
     "ANN003",
     "ANN101",
     "ANN102",
